@@ -1,0 +1,2 @@
+{"type":"bundle","id":"bundle--demo-uav","objects":[{"type":"indicator","spec_version":"2.1","id":"indicator--00000000-0000-4000-8005-000000000001","created":"2026-01-01T00:00:00Z","modified":"2026-01-01T00:00:00Z","name":"Unauthorized MAVLink command source","pattern_type":"stix","pattern":"[network-traffic:src_ref.value = '10.20.0.66']","valid_from":"2026-01-01T00:00:00Z"}]}
+

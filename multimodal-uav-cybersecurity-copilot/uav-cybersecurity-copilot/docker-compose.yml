@@ -1,0 +1,15 @@
+services:
+  copilot:
+    build: .
+    ports:
+      - "8005:8005"
+    volumes:
+      - copilot-data:/app/runtime
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8005/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+volumes:
+  copilot-data:
+

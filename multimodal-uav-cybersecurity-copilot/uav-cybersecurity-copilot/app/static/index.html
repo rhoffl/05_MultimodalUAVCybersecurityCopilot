@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UAV Cyber Copilot</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><header><div><small>RESEARCH PROTOTYPE · SIMULATED ATTACKS</small><h1>Multimodal UAV Cybersecurity Copilot</h1><p>Correlate flight, network, mission, vision, manual, STIX, and ATT&CK evidence.</p></div><span class="badge">Not safety-certified</span></header>
+<main><section class="controls card"><h2>Attack lab</h2><div><select id="scenario"><option value="gps-spoofing">GPS spoofing</option><option value="command-injection">Command injection</option><option value="telemetry-dos">Telemetry DoS</option><option value="vision-mismatch">Vision mismatch</option><option value="benign">Benign flight</option></select><button onclick="run()">Simulate & investigate</button><button class="secondary" onclick="resetAll()">Reset</button></div></section>
+<section id="metrics" class="metrics"></section><section class="grid"><article class="card"><h2>Investigation</h2><div id="alert" class="empty">Run a scenario to produce a cited investigation.</div></article><article class="card"><h2>Evidence graph</h2><div id="graph" class="empty">Correlated evidence will appear here.</div></article></section></main>
+<script src="/static/app.js"></script></body></html>
+
